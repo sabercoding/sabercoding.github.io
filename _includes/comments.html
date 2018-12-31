@@ -1,56 +1,18 @@
 <section class="post-comments">
-  {% if site.comment.disqus %}
-    <div id="disqus_thread"></div>
-    <script>
+    <div id="gitalk-container"></div>
 
-    var disqus_config = function () {
-        this.page.url = "{{ page.url | prepend: site.baseurl | prepend: site.url }}";
-        this.page.identifier = "{{ page.url }}";
-    };
-
-    var disqus_shortname = '{{ site.comment.disqus }}';
-
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
-
-  {% elsif site.comment.duoshuo %}
-    <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script type="text/javascript">
-        var duoshuoQuery = {short_name:"{{ site.comment.duoshuo }}"};
-        (function() {
-            var ds = document.createElement('script');
-            ds.type = 'text/javascript';ds.async = true;
-            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-            ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
+        var gitalk = new Gitalk({
+            clientID: 'f2491695bbb3a8b4b66b',
+            clientSecret: 'bc4459c5945c0af08832848ffaaa95bf0e22e941',
+            repo: 'blog-comments',
+            owner: 'sabercoding',
+            admin: ['sabercoding'],
+            id: '{{ page.url }}',
+            distractionFreeMode: false
+        });
+        gitalk.render('gitalk-container');
     </script>
-  {% endif %}
-
-    <div id="comments">
-        <div id="gitalk-container"></div>
-
-        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-        <script type="text/javascript">
-            var gitalk = new Gitalk({
-                clientID: 'f2491695bbb3a8b4b66b',
-                clientSecret: 'bc4459c5945c0af08832848ffaaa95bf0e22e941',
-                repo: 'blog-comments',
-                owner: 'sabercoding',
-                admin: ['sabercoding'],
-                id: '{{ page.url }}',
-                distractionFreeMode: false
-            });
-            gitalk.render('gitalk-container');
-        </script>
-    </div>
-
-
 </section>

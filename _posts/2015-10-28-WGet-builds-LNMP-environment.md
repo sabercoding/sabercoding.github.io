@@ -76,7 +76,7 @@ cp support-files/my-default.cnf  /data/webserver/mysql/my.cnf
 ```
 cp support-files/mysql.server /etc/init.d/mysql   
 ```
-####现在可以使用下面的命令 
+#### 现在可以使用下面的命令
 ```
 service mysql start   #启动mysql  
 service mysql stop   #停止mysql服务   

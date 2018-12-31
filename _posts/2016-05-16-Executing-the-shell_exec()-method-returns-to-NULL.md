@@ -31,6 +31,6 @@ http://stackoverflow.com/questions/18241305/shell-exec-returning-null-on-ls
     #!/usr/bin/env php
 虚拟机的php是软连接，所以就会报php没找到，要添加绝对路径去执行就好了。
 
-###总结：
+### 总结：
 搜索问题原本自己觉得还是不错的。。。这次的问题发现自己还是没有达到一定的解决问题的能力。首先，php的函数可以去好文档函数详细的查找，之后再去google搜索，stackoverflow搜索。千万不要嫌英语烦！！！！！！！！！！！！！！！！！
 安利个提问的智慧：http://www.dianbo.org/9238/stone/tiwendezhihui.htm

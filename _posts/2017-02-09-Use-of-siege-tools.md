@@ -4,14 +4,14 @@ title: "siege 工具使用"
 date: 2017-02-09 02:31:31.000000000 +09:00
 ---
 
-#安装
+# 安装
 Mac 下直接brew安装：
 
 ```
 brew install siege
 ```
 
-#参数详解：
+# 参数详解：
 
 ```
 siege --help
@@ -64,27 +64,27 @@ There is NO warranty; not even for MERCHANTABILITY or FITNESS
 FOR A PARTICULAR PURPOSE.
 ```
 
-#操作命令：
-##post请求：
+# 操作命令：
+## post请求：
 
 ```
 siege -c 200 -r 50 "http://user.com/api/user/query?time=1481613695.8274 POST uid_list=[\\"UstiurDyhSoz8\\"]&app_id=58" -b  //命令执行
 siege -c100 -r100 -f siege.txt -b  //文件数据执行
 ```
-###siege.txt内容：
+### siege.txt内容：
 
 ```
 http://user.com/api/credit/grant?time=1481613695.8274 POST app_id=58&uid=UstUJAj5PFseN&buss_id=xxxxxsdsdsf&=&money=2000000
 http://user.com/api/credit/grant?time=1481613695.8274 POST app_id=58&uid=UstUJAjR61Ric&buss_id=xxxxxsdsdsf&=&money=2000000
 ...
 ```
-##get请求
+## get请求
 
 ```
 siege -c 200 -r 50 "http://user.com/api/user/query?time=1481613695.8274" -b  //命令执行
 siege -c100 -r100 -f siege.txt -b  //文件数据执行
 ```
-###siege.txt内容：
+### siege.txt内容：
 
 ```
 http://user.com/api/credit/grant?time=1481613695.8274
@@ -92,7 +92,7 @@ http://user.com/api/credit/grant?time=1481613695.8274
 ...
 ```
 
-#结果说明：
+# 结果说明：
 ```
 ** SIEGE 2.72
 ** Preparing 300 concurrent users for battle.
@@ -113,7 +113,7 @@ Shortest transaction:      0.00           #每次传输所花最短时间
 ```
 
 
-#参考文档：
+# 参考文档：
      [压力测试和评测工具Siege](http://xstarcd.github.io/wiki/shell/siege.htm)
 
 

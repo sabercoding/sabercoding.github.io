@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "logstash-elasticsearch-kibana时间问题"
-date: 2017-11-09 02:33:05.000000000 +09:00
+date: 2018-02-29 10:38:00.000000000 +09:00
+tags: elk
 ---
 
 > 基于elk搭建一套日志系统，在搭建的同时发现一个关于时间的问题。
@@ -30,3 +31,4 @@ date: 2017-11-09 02:33:05.000000000 +09:00
 2. 设置成utc即可。
 
 由于kibana的时间格式看着比较变扭，也可以修改Advanced Settings的dateFormat成YYYY-MM-DD HH:mm:ss.SSS，这样就看着顺眼多了。
+

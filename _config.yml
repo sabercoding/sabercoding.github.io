@@ -37,7 +37,7 @@ social:
 
 # Google Analytics
 ga:
-    id: UA-25719337-1
+    id: UA-115873971-2
     host: shuibo.me
 
 theme: jekyll-theme-cayman

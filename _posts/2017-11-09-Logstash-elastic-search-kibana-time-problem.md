@@ -2,6 +2,7 @@
 layout: post
 title: "logstash-elasticsearch-kibana时间问题"
 date: 2017-11-09 10:38:00.000000000 +09:00
+tags: elk
 ---
 
 > 基于elk搭建一套日志系统，在搭建的同时发现一个关于时间的问题。

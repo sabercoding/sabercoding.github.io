@@ -2,6 +2,7 @@
 layout: post
 title: "logrotate使用教程"
 date: 2019-01-23 12:19:00.000000000 +09:00
+category: Liunx
 ---
 0x01 前言
 

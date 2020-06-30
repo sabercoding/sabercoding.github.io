@@ -10,12 +10,13 @@ date: 2017-02-09 02:36:50.000000000 +09:00
 >这个指令保持在元素上直到关联实例结束编译。和 CSS 规则如 [v-cloak] { display: none } 一起用时，这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。
 
 示例：
-```css
+``` css
 [v-cloak] {
 display: none;
 }
 ```
-```html
+
+``` html
 <div v-cloak>
 {{ message }}
 </div>

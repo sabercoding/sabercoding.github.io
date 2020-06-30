@@ -1,18 +1,11 @@
-<section class="post-comments">
-    <div id="gitalk-container"></div>
-
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script type="text/javascript">
-        var gitalk = new Gitalk({
-            clientID: 'f2491695bbb3a8b4b66b',
-            clientSecret: 'bc4459c5945c0af08832848ffaaa95bf0e22e941',
-            repo: 'blog-comments',
-            owner: 'sabercoding',
-            admin: ['sabercoding'],
-            id: '{{ page.url }}',
-            distractionFreeMode: false
-        });
-        gitalk.render('gitalk-container');
-    </script>
-</section>
+{%- if jekyll.environment != 'development' -%}
+  {%- if site.comments.provider == 'disqus' -%}
+    {%- include comments-providers/disqus.html -%}
+  {%- elsif site.comments.provider == 'gitalk' -%}
+    {%- include comments-providers/gitalk.html -%}
+  {%- elsif site.comments.provider == 'valine' -%}
+    {%- include comments-providers/valine.html -%}
+  {%- elsif site.comments.provider == 'custom' -%}
+    {%- include comments-providers/custom.html -%}
+  {%- endif -%}
+{%- endif -%}

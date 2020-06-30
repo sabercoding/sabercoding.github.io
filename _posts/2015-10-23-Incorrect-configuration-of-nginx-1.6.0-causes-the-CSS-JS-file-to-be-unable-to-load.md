@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "nginx1.6.0配置不对导致css js文件加载不了"
 date: 2015-10-23 07:13:00.000000000 +09:00
 ---

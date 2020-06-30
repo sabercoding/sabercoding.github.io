@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: article
 title: "mysql建表时间格式优化"
 date: 2016-06-12 13:41:00.000000000 +09:00
 ---
 
 创建时间，更新时间设置成下面这样就可以自动设置时间跟更新时间。
- 
+
 
      `ctime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
      `mtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,

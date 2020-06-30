@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "phpstorm 跟mac 快捷键冲突"
 date: 2015-11-13 08:59:00.000000000 +09:00
 ---

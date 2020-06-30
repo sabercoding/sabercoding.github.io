@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "logstash-elasticsearch-kibana时间问题"
 date: 2017-11-09 02:33:05.000000000 +09:00
 ---

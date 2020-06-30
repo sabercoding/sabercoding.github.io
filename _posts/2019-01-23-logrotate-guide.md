@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "logrotate使用教程"
 date: 2019-01-23 12:19:00.000000000 +09:00
 category: Liunx
@@ -27,7 +27,7 @@ category: Liunx
 默认文件地址：
 
 1. /etc/logrotate.conf
-2. /etc/logrotate.d/ 
+2. /etc/logrotate.d/
 
 自定义的配置文件需要存储到/etc/logrotate.d/内。
 

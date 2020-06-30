@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "mysql进入安全模式修改密码。"
 date: 2015-11-05 10:27:00.000000000 +09:00
 ---
@@ -33,7 +33,7 @@ mysql>
     mysql>update  user set password=password("551111") where user="root";
     Query OK, 3 rows affected (0.08 sec)
     Rows matched: 3  Changed: 3  Warnings: 0
-    
+
     mysql> commit;
     Query OK, 0 rows affected (0.00 sec)
     mysql> exit;
@@ -42,9 +42,9 @@ mysql>
     Welcome to the MySQL monitor.  Commands end with ; or \\g.
     Your MySQL connection id is 3
     Server version: 5.1.37-1ubuntu5.5 (Ubuntu)
-    
+
     Type ''help;'' or ''\\h'' for help. Type ''\\c'' to clear the current input statement.
-    
+
     mysql>
 ```
 

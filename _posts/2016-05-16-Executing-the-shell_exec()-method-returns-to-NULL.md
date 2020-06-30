@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "执行shell_exec()方法返回为NULL"
 date: 2016-05-16 06:54:00.000000000 +09:00
 ---

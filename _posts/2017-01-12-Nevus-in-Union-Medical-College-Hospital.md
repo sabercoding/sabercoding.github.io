@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "协和医院点痣记"
 date: 2017-01-12 07:16:39.000000000 +09:00
 ---

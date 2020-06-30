@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "MySQL分区表"
 date: 2019-01-31 18:39:00.000000000 +09:00
 category: MySQL
@@ -170,7 +170,7 @@ MySQL不禁止在分区键值上使用Null，分区键可能是一个字段或�
 
 1. MySQL的分区把 Null当作零值，或者一个最小值进行处理；
 2. range 分区中，Null值会被当作最小值来处理；
-3. list分区中，Null值必须出现在枚举列表中，否则不被接受； 
+3. list分区中，Null值必须出现在枚举列表中，否则不被接受；
 4. hash/key 分区中，Null值会被当作零值来处理。
 
 #### 0x03 分区表的使用

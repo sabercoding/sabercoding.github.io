@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "记一次LOCK_EX导致的504错误"
 date: 2017-10-10 02:26:00.000000000 +09:00
 ---

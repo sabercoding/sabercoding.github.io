@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "es2.3.3+ik1.9.3安装"
 date: 2016-07-23 10:15:58.000000000 +09:00
 ---

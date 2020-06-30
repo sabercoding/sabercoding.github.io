@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "rust学习之二"
 date: 2017-11-07 02:29:00.000000000 +09:00
 ---

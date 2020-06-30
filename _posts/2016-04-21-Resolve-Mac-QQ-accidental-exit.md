@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "解决Mac QQ意外退出"
 date: 2016-04-21 05:47:00.000000000 +09:00
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "解决vue.js页面加载未完成时乱码"
 date: 2017-02-09 02:36:50.000000000 +09:00
 ---

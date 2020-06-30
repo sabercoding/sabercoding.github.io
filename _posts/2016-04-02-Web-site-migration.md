@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "网站迁移工作"
 date: 2016-04-02 16:05:00.000000000 +09:00
 ---
@@ -31,7 +31,7 @@ date: 2016-04-02 16:05:00.000000000 +09:00
     ;zlib.output_handler
 
 修改nginx.conf  在http{}里面添加
- 
+
 
     gzip on;
      gzip_buffers 4 16k;

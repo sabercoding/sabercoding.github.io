@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "根据关键词获取经纬度"
 date: 2017-03-24 08:11:38.000000000 +09:00
 ---

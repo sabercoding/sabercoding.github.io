@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "解决PHP使用普通账号连接mongodb报错问题"
 date: 2015-10-17 05:06:00.000000000 +09:00
 ---

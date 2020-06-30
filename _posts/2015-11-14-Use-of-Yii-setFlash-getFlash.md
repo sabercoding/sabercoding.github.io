@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "Yii setFlash getFlash用法"
 date: 2015-11-14 07:01:00.000000000 +09:00
 ---
@@ -13,7 +13,7 @@ date: 2015-11-14 07:01:00.000000000 +09:00
     <?php echo Yii::app()->user->getFlash(‘success’); ?>  //输出消息内容,输出后,就不存在了.
     </div>
     <?php endif; ?>
-    
+
     <?php  //这是一段,在显示后定里消失的JQ代码,已集成至Yii中.
     Yii::app()->clientScript->registerScript(
     ‘myHideEffect’,

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "rust学习之一"
 date: 2017-11-06 02:28:00.000000000 +09:00
 ---

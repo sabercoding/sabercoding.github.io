@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "如何提问？"
 date: 2015-12-02 03:17:00.000000000 +09:00
 ---

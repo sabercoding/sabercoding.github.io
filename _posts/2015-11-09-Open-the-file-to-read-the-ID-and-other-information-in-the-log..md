@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "打开文件读取日志里面的id等信息；"
 date: 2015-11-09 03:48:00.000000000 +09:00
 ---

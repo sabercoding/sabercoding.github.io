@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "记一次nginx 403错误"
 date: 2017-02-09 02:21:57.000000000 +09:00
 ---
@@ -36,5 +36,5 @@ server {
 2017/01/09 11:47:05 [error] 15600#0: *3811575 directory index of "/usr/share/nginx/html/" is forbidden, client: 116.90.80.160, server: xcx.com, request: "GET / HTTP/1.1", host: “xcx.com"
 ```
 
-    server_name xcx.com www.xcx.com  
+    server_name xcx.com www.xcx.com
 缺少;没有提示，所以后面的root并没有生效。。。。。。

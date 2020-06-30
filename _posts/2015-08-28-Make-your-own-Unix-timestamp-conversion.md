@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "自己做个Unix时间戳转换"
 date: 2015-08-28 08:19:00.000000000 +09:00
 ---

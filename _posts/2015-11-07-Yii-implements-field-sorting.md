@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "yii 实现字段排序"
 date: 2015-11-07 03:38:00.000000000 +09:00
 ---

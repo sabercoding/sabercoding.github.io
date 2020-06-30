@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "LuaJavaBridge - Lua 与 Java 互操作的简单解决方案"
 date: 2015-11-19 10:36:00.000000000 +09:00
 ---

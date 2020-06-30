@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "添加flagcounter统计并支持https"
 date: 2017-02-22 09:27:00.000000000 +09:00
 ---

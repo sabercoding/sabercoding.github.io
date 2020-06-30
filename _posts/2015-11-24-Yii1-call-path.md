@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "yii1调用路径"
 date: 2015-11-24 08:29:00.000000000 +09:00
 ---
@@ -56,7 +56,7 @@ date: 2015-11-24 08:29:00.000000000 +09:00
 　　
 
 复制代码
- 
+
 
 　　Yii::app()->clientScript->registerMetaTag(‘keywords’,''关键字’); Yii::app()->clientScript->registerMetaTag(‘description’,''一些描述’); Yii::app()->clientScript->registerMetaTag(‘author’,''作者’);
 
@@ -71,7 +71,7 @@ date: 2015-11-24 08:29:00.000000000 +09:00
 　　
 
 复制代码
- 
+
 
 　　在控制器添加CSS文件或JavaScript文件
 

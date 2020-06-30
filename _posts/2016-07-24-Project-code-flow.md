@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "项目代码流程"
 date: 2016-07-24 03:57:00.000000000 +09:00
 ---

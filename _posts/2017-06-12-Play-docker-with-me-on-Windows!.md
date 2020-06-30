@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "跟我在Windows下玩docker吧!"
 date: 2017-06-12 02:09:04.000000000 +09:00
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "php扩展安装、"
 date: 2015-11-13 02:26:00.000000000 +09:00
 ---

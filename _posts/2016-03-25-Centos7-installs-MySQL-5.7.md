@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "centos7 安装mysql5.7"
 date: 2016-03-25 11:04:00.000000000 +09:00
 ---
@@ -34,7 +34,7 @@ date: 2016-03-25 11:04:00.000000000 +09:00
 
 **Step6: 查看mysql是否自启动,并且设置开启自启动**
 
-    # chkconfig --list | grep mysqld 
+    # chkconfig --list | grep mysqld
     # chkconfig mysqld on
 
 **Step7: mysql root密码查找**
@@ -57,7 +57,7 @@ date: 2016-03-25 11:04:00.000000000 +09:00
      mysql: grant all privileges on *.* to username@"%" identified by "password" ; //设置远程权限
      Query OK, 0 rows affected, 1 warning (0.00 sec)
 
-参考相关文档地址: 
+参考相关文档地址:
 <a href="https://segmentfault.com/a/1190000003049498" target="_blank">CentOS 6.5/6.6 安装mysql 5.7 最完整版教程</a>
 
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "OOA OOP OOD "
 date: 2015-11-19 06:40:00.000000000 +09:00
 ---

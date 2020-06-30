@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "node post请求"
 date: 2015-12-08 09:12:00.000000000 +09:00
 ---

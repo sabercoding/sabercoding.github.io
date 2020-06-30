@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: " rsync: read error: Connection reset by peer解决办法"
 date: 2015-11-18 09:18:00.000000000 +09:00
 ---
@@ -16,5 +16,5 @@ date: 2015-11-18 09:18:00.000000000 +09:00
 
     ln -s /etc/rsyncd/rsyncd.conf /etc/rsyncd.conf
 
- 
+
 解决！

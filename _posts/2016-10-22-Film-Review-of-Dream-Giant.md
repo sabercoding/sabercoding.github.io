@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "圆梦巨人影评"
 date: 2016-10-22 14:00:30.000000000 +09:00
 ---

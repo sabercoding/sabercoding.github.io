@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "内画传统艺术！！！赞一个～"
 date: 2015-11-29 15:14:00.000000000 +09:00
 ---

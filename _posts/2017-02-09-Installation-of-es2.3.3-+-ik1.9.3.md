@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "es2.3.3+ik1.9.3安装"
 date: 2017-02-09 02:28:56.000000000 +09:00
 ---
@@ -29,6 +29,6 @@ export PATH=$PATH:$M2_HOME/bin
 source /etc/profile
 mvn -version  //检测是否成功
 //构建java包
-mvn clean package 
+mvn clean package
 ```
 取出“target/releases/”下的zip包，在plugins目录中新建目录“ik”，将zip包解压到此目录中，重启elasticsearch即可

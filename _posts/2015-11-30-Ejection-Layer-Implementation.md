@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "弹出层实现"
 date: 2015-11-30 13:56:00.000000000 +09:00
 ---
@@ -60,7 +60,7 @@ serialize()和unserialize()函数
       var obj = JSON.parse(strJSON)；
 
 json对象转字符串(obj代表json对象)
- 
+
 
      var str = obj.toJSONString();
       var str = JSON.stringify(obj)

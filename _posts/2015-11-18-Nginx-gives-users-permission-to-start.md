@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "nginx 让users有权限启动"
 date: 2015-11-18 09:17:00.000000000 +09:00
 ---

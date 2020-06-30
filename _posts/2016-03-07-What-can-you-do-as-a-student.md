@@ -1,16 +1,16 @@
 ---
-layout: post
+layout: article
 title: "学生身份你可以干什么？"
 date: 2016-03-07 06:28:00.000000000 +09:00
 ---
 
 满怀欣喜的来到了大学校园，踏上了程序猿的这条不归路。开始学着敲hello world，慢慢的对软件有了需求，对环境有了需求。本文就来说说作为学生你可以获得教育优惠有什么？
 苹果的教育优惠就不说啦。。。。之前有送beats耳机。。。微软系:<a href="//link.zhihu.com/?target=https%3A//www.dreamspark.com/" class=" wrap external" target="_blank">Microsoft DreamSpark<i></i></a>获取资格:.edu(.cn)邮箱或国际学生身份证(ISIC)或录取通知书或学生证等一切能证明你是学生的证明文档.除非特殊说明,所有授权不得转让或用于商业用途.可获取开发工具:
-	Visual Studio Professional 
+	Visual Studio Professional
 	Windows Embedded 8.1 Industry Pro with Update等
 服务器系统和应用程序:
-	SQL Server 
-	Windows Server 
+	SQL Server
+	Windows Server
 	Windows Virtual PC等
 培训:
 	Microsoft 虚拟学院
@@ -69,7 +69,7 @@ GitHub组织的优惠:<a href="//link.zhihu.com/?target=https%3A//education.gith
 (115.239.211.112) 56(84) bytes of data.    //阿里
 64 bytes from 115.239.211.112: icmp_seq=1 ttl=52 time=15.8 ms
 ```
-百度云是云盘。。。百度云平台它才是云服务平台。嗯，没找到什么优惠，跳过吧。。。。  
+百度云是云盘。。。百度云平台它才是云服务平台。嗯，没找到什么优惠，跳过吧。。。。
 <a href="https://bce.baidu.com/index.html">https://bce.baidu.com/index.html</a>
 
 国内比较便宜的还有就是新浪的sae了。最近数据库要租金，就把所有的数据库迁移到云服务器上面了。一天也花费不了几十豆豆。（刚开始做活动给了三千多豆豆，嘿嘿）

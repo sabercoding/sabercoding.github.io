@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "mb_convert_encoding()使用"
 date: 2015-09-01 07:51:00.000000000 +09:00
 ---

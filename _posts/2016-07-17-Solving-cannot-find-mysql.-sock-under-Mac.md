@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "Mac 下解决cannot find mysql.sock"
 date: 2016-07-17 16:00:00.000000000 +09:00
 ---
@@ -12,13 +12,13 @@ date: 2016-07-17 16:00:00.000000000 +09:00
 
     We''ve installed your MySQL database without a root password. To secure it run:
         mysql_secure_installation
-    
+
     To connect run:
         mysql -uroot
-    
+
     A "/etc/my.cnf" from another install may interfere with a Homebrew-built
     server starting up correctly.
-    
+
     To have launchd start mysql now and restart at login:
       brew services start mysql
     Or, if you don''t want/need a background service you can just run:

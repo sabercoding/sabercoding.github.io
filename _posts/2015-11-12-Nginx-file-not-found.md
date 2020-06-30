@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "nginx file not found"
 date: 2015-11-12 16:23:00.000000000 +09:00
 ---

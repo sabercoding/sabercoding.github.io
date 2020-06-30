@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "rusty_sr-图片变高清"
 date: 2017-03-28 03:03:00.000000000 +09:00
 ---
@@ -12,27 +12,27 @@ date: 2017-03-28 03:03:00.000000000 +09:00
 随意提出一般性讨论或提出任何问题的问题。
 
 ## 使用
-升级图像:  
-`rusty_sr.exe <INPUT_FILE> <OUTPUT_FILE>`  
+升级图像:
+`rusty_sr.exe <INPUT_FILE> <OUTPUT_FILE>`
 
 推荐使用PNG输出文件。
-更多的选项：  
-`rusty_sr.exe --help`  
-`rusty_sr.exe train --help`  
+更多的选项：
+`rusty_sr.exe --help`
+`rusty_sr.exe train --help`
 
 ## 搭建
 获取rust编译器（rustc）使用[rustup]（https://rustup.rs）。为了最好的性能编译使用环境变量 `RUSTFLAGS="-C target-cpu=native" `和构建发布模式 `cargo build --release`。
-或在一行中： `cargo rustc --release -- -C target-cpu=native`.  
+或在一行中： `cargo rustc --release -- -C target-cpu=native`.
 
 ## 事例
-Set14 Cartoon  
+Set14 Cartoon
 ![CartoonLowRes](https://raw.githubusercontent.com/millardjn/rusty_sr/master/docs/cartoon_nn.png)![Cartoon](https://raw.githubusercontent.com/millardjn/rusty_sr/master/docs/cartoon_rsa.png)
 
-Set14 Butterfly  
+Set14 Butterfly
 ![ButterflyLowRes](https://raw.githubusercontent.com/millardjn/rusty_sr/master/docs/butterfly_nn.png)![Butterfly](https://raw.githubusercontent.com/millardjn/rusty_sr/master/docs/butterfly_rs.png)
 
-Bank Lobby (test image for [Neural Enhance](https://github.com/alexjc/neural-enhance))  
-CC-BY-SA @benarent  
+Bank Lobby (test image for [Neural Enhance](https://github.com/alexjc/neural-enhance))
+CC-BY-SA @benarent
 ![BankLowRes](https://raw.githubusercontent.com/millardjn/rusty_sr/master/docs/bank_nn.png)![Bank](https://raw.githubusercontent.com/millardjn/rusty_sr/master/docs/bank_rs.png)
 
 ## 注意

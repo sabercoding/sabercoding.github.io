@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "记一次webpack资源路径问题"
 date: 2017-09-03 12:26:27.000000000 +09:00
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "alfred web search设置"
 date: 2016-03-08 08:59:00.000000000 +09:00
 ---

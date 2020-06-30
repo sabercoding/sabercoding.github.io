@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "饼图， 带百分百，带数量"
 date: 2015-11-13 10:46:00.000000000 +09:00
 ---
@@ -19,25 +19,25 @@ date: 2015-11-13 10:46:00.000000000 +09:00
          * @var CActiveDataProvider
          */
         public $dataProvider = null;
-    
+
         /**
          * @var string object attribute name of counter
          */
         public $attributeDate = ''stat_date'';
-    
+
         /**
          * @var string object attribute name of counter
          */
         public $attributeCounter = '''';
-    
+
         /**
          * @var string
          */
         public $counterFormatter = ''int'';
-    
+
         protected function getConfig()
         {
-    
+
             $config = array(
                 ''chart''=>array(
                     ''plotBackgroundColor''=>null,
@@ -168,13 +168,13 @@ date: 2015-11-13 10:46:00.000000000 +09:00
                     ''y'' => $v
                 );
             }
-    
+
             $config[''series''][0] = $series;
     //        print_r($config);die;
     //        $config[''xAxis''][''categories''] = array_keys($rawData);
     //        }
             return $config;
         }
-    
-    
+
+
     }

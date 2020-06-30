@@ -67,7 +67,7 @@ category: MySQL
 
 很多统计类的业务，查询条件里必备的就是时间范围搜索，因此，我们选择的分区键就是那个时间字段。
 
-```mysql
+```sql
 CREATE TABLE `list` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `ctime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -83,13 +83,13 @@ CREATE TABLE `list` (
 
 这样的分表也是极为常见的，但是如果业务上都是以天为维度的，类似的执行sql：
 
-```mysql
+```sql
 select DATE_FORMAT(ctime, "%Y-%m-%d"),count(1) as total from list where ctime >= '2018-12-16' group by DATE_FORMAT(ctime, "%Y-%m-%d");
 ```
 
 这样包含函数的sql语句执行的效率并不会很高，因此，我们可以这样设计表格：
 
-```mysql
+```sql
 CREATE TABLE `list` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `ctime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -106,7 +106,7 @@ CREATE TABLE `list` (
 
 sql修改为：
 
-```mysql
+```sql
 select in_date,count(1) as total from list where in_date >= '2018-12-16' group by in_date;
 ```
 
@@ -116,7 +116,7 @@ select in_date,count(1) as total from list where in_date >= '2018-12-16' group b
 
 1. RANGE：基于一个给定连续区间范围，把数据分配到不同的分区
 
-```mysql
+```sql
 create table list (
     id int unsigned not null AUTO_INCREMENT,
     age int,
@@ -131,7 +131,7 @@ create table list (
 
 2. LIST：类似 RANGE 分区，区别在 LIST 分区是基于枚举出的值列表分区，RANGE 是局域给定的连续区间范围分区。
 
-```mysql
+```sql
 create table list (
     id int unsigned not null AUTO_INCREMENT,
     area int,
@@ -146,7 +146,7 @@ create table list (
 
 3. HASH：基于给定的分区个数，把数据分配到不同的分区。
 
-```mysql
+```sql
 create table list (
     id int unsigned not null AUTO_INCREMENT,
     birthday date,
@@ -157,7 +157,7 @@ create table list (
 
 4. KEY：按照某个字段取余
 
-```mysql
+```sql
 create table list (
     id int unsigned not null AUTO_INCREMENT,
     limit int,
@@ -183,7 +183,7 @@ $ mysql -h 127.0.0.1 -uroot -proot test --default-character-set=utf8 -e"select *
 
 导入：
 
-```mysql
+```sql
 mysql> LOAD DATA LOCAL INFILE 'out' INTO TABLE list1;
 ```
 

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: page
 title: "MySQL分区表"
 date: 2019-01-31 18:39:00.000000000 +09:00
 category: MySQL

@@ -2,6 +2,7 @@
 layout: article
 title: "centos7 安装mysql5.7"
 date: 2016-03-25 11:04:00.000000000 +09:00
+tags: linux mysql
 ---
 
     # mysql -V

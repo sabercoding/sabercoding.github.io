@@ -2,6 +2,7 @@
 layout: article
 title: "linux命令"
 date: 2015-11-12 10:34:00.000000000 +09:00
+tags: linux
 ---
 
 今天发现服务器上Tomcat 8080端口起不来，老提示端口已经被占用。

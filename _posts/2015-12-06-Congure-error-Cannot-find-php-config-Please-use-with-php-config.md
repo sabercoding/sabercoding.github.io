@@ -2,6 +2,7 @@
 layout: article
 title: " configure: error: Cannot find php-config. Please use --with-php-config=PATH"
 date: 2015-12-06 09:19:00.000000000 +09:00
+tags: php
 ---
 
  `configure: error: Cannot find php-config. Please use --with-php-config=PATH`

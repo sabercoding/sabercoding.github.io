@@ -2,6 +2,7 @@
 layout: article
 title: "php7安装redis"
 date: 2016-04-25 08:57:31.000000000 +09:00
+tags: php
 ---
 
 ①、下载phpredis：

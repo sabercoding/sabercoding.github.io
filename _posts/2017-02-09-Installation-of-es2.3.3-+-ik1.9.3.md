@@ -2,6 +2,7 @@
 layout: article
 title: "es2.3.3+ik1.9.3安装"
 date: 2017-02-09 02:28:56.000000000 +09:00
+tags: es
 ---
 
 ## 安装es2.3.3

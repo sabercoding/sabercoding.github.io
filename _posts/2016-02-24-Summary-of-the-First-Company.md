@@ -2,6 +2,7 @@
 layout: article
 title: "第一家公司总结"
 date: 2016-02-24 08:58:00.000000000 +09:00
+tags: summary
 ---
 
 公司：北京某游戏公司

@@ -2,6 +2,7 @@
 layout: article
 title: "nginx file not found"
 date: 2015-11-12 16:23:00.000000000 +09:00
+tags: nginx
 ---
 
 又开始搭建web服务器，这个服务器里面有阿里云自带1.6.0，还有一个1.8.0老王安装的。。。。。。。坑爹，老是报localhost重复。。果断删除了1.8的nginx还有把init.d里面的nginx替换了，把配置文件替换了。

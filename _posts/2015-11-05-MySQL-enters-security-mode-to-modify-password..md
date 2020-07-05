@@ -2,6 +2,7 @@
 layout: article
 title: "mysql进入安全模式修改密码。"
 date: 2015-11-05 10:27:00.000000000 +09:00
+tags: mysql
 ---
 
 ### 步骤:

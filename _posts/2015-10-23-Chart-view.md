@@ -2,6 +2,7 @@
 layout: article
 title: "chart视图"
 date: 2015-10-23 07:40:00.000000000 +09:00
+tags: php chart
 ---
 
     $config = array(

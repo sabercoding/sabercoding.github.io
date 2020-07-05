@@ -2,6 +2,7 @@
 layout: article
 title: "php扩展安装"
 date: 2015-11-13 02:26:00.000000000 +09:00
+tags: php
 ---
 
 安装 mongo 扩展，先在php.ini里面添加

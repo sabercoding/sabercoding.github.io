@@ -2,6 +2,7 @@
 layout: article
 title: " rsync: read error: Connection reset by peer解决办法"
 date: 2015-11-18 09:18:00.000000000 +09:00
+tags: rsync
 ---
 
     [marsaber@server1 ~]$ rsync --list-only marsaber@10.10.10.3::

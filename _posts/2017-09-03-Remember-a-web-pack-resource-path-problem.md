@@ -2,6 +2,7 @@
 layout: article
 title: "记一次webpack资源路径问题"
 date: 2017-09-03 12:26:27.000000000 +09:00
+tags: webpack
 ---
 
 >webpack执行npm run build 之后传到远程服务器后，路由不能正常显示。本地环境能正常访问。

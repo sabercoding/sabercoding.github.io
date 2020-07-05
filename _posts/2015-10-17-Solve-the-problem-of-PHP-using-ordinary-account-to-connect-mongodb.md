@@ -2,6 +2,7 @@
 layout: article
 title: "解决PHP使用普通账号连接mongodb报错问题"
 date: 2015-10-17 05:06:00.000000000 +09:00
+tags: php yii
 ---
 
 >起先使用mongodb来开发，未加上账号密码验证功能. mongodb一直正常，准备放到线上之时加上账号密码功能，整个过程如下:

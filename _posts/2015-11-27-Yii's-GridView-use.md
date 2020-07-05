@@ -2,6 +2,7 @@
 layout: article
 title: "yii的gridview使用"
 date: 2015-11-27 07:04:00.000000000 +09:00
+tags: yii php
 ---
 
 ``` php

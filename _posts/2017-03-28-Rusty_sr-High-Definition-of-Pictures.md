@@ -2,6 +2,7 @@
 layout: article
 title: "rusty_sr-图片变高清"
 date: 2017-03-28 03:03:00.000000000 +09:00
+tags: rust
 ---
 
 ![LogoNN](https://shuibo.me/assets/images/201703/logo_nn.png)

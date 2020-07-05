@@ -2,6 +2,7 @@
 layout: article
 title: "git 命令"
 date: 2015-12-03 03:17:00.000000000 +09:00
+tags: git
 ---
 
 获取远程分支到本地

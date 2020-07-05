@@ -2,6 +2,7 @@
 layout: article
 title: "关于Nginx偶尔闪现502的简单解决办法。。"
 date: 2017-02-09 02:26:15.000000000 +09:00
+tags: nginx
 ---
 
 ## 1.增加内存

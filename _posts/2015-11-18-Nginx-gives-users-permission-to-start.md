@@ -2,6 +2,7 @@
 layout: article
 title: "nginx 让users有权限启动"
 date: 2015-11-18 09:17:00.000000000 +09:00
+tags: nginx
 ---
 
 普通用户在restart和reload nginx时，会报错：the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /opt/nginx/conf/nginx.conf:1

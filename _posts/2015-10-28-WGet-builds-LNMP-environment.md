@@ -2,6 +2,7 @@
 layout: article
 title: "wget 搭建lnmp环境"
 date: 2015-10-28 02:46:00.000000000 +09:00
+tags: lnmp
 ---
 
 ### 安装必要的软件

@@ -2,6 +2,7 @@
 layout: article
 title: "explode和preg_match比较"
 date: 2016-06-12 13:42:47.000000000 +09:00
+tags: php
 ---
 
 ``` php

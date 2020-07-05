@@ -1,7 +1,8 @@
 ---
 layout: article
-title: "饼图， 带百分百，带数量"
+title: "带百分百和数量饼图实现"
 date: 2015-11-13 10:46:00.000000000 +09:00
+tags: hchart php yii
 ---
 
 ![7.png](https://shuibo.me/assets/images/201511/T_1vtU7TPtYAqpvRVmcZD01He-V18N8H.png "7.png")

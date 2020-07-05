@@ -2,6 +2,7 @@
 layout: article
 title: "内画传统艺术！！！赞一个～"
 date: 2015-11-29 15:14:00.000000000 +09:00
+tags: life
 ---
 
 http://www.56.com/u37/v_NDU3ODk3NzA.html

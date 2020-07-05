@@ -2,6 +2,7 @@
 layout: article
 title: "linux开机自启"
 date: 2015-11-09 05:47:00.000000000 +09:00
+tags: linux
 ---
 
 一、/etc/rc.local

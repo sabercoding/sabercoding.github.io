@@ -2,6 +2,7 @@
 layout: article
 title: "yii1调用路径"
 date: 2015-11-24 08:29:00.000000000 +09:00
+tags: yii
 ---
 
 

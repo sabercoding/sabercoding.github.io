@@ -2,6 +2,7 @@
 layout: article
 title: "程序运行时间"
 date: 2015-12-08 10:51:00.000000000 +09:00
+tags: php
 ---
 
 ``` php

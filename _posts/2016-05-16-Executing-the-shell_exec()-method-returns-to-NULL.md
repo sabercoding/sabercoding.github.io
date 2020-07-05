@@ -2,6 +2,7 @@
 layout: article
 title: "执行shell_exec()方法返回为NULL"
 date: 2016-05-16 06:54:00.000000000 +09:00
+tags: php
 ---
 
 >我想让php的www用户能执行命令，用shell_exec()命令执行了phpmd，我把这个文件夹权限改成了777为啥还是不能执行？

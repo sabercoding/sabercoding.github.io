@@ -2,6 +2,7 @@
 layout: article
 title: "圆梦巨人影评"
 date: 2016-10-22 14:00:30.000000000 +09:00
+tags: 影评
 ---
 
 豆瓣链接：https://movie.douban.com/subject/25875021/

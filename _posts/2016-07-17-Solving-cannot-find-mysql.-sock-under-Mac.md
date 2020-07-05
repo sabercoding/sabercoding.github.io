@@ -2,6 +2,7 @@
 layout: article
 title: "Mac 下解决cannot find mysql.sock"
 date: 2016-07-17 16:00:00.000000000 +09:00
+tags: mysql
 ---
 
 之前数据库都是用的公司的虚拟机，但是没网的时候就不方便了。所以还是在自己的Mac下搭建一个MySQL。

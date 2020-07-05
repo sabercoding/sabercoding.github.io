@@ -2,6 +2,7 @@
 layout: article
 title: "跟我在Windows下玩docker吧!"
 date: 2017-06-12 02:09:04.000000000 +09:00
+tags: docker windows
 ---
 
 > 迫于公司电脑是个台式机，而且网上的云也挺贵的，大一点的配置就得好多钱。所以就在windows下先搞定docker，再去云上实践。嘿嘿嘿！

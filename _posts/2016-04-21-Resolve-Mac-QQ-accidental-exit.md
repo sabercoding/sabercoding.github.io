@@ -2,6 +2,7 @@
 layout: article
 title: "解决Mac QQ意外退出"
 date: 2016-04-21 05:47:00.000000000 +09:00
+tags: qq mac
 ---
 
 在Mac上登录qq一直意外退出。。。。卸了又装没啥用

@@ -2,6 +2,7 @@
 layout: article
 title: "记一次nginx 403错误"
 date: 2017-02-09 02:21:57.000000000 +09:00
+tags: nginx
 ---
 
 ```

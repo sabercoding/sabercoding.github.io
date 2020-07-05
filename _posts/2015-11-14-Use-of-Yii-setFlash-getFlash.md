@@ -2,6 +2,7 @@
 layout: article
 title: "Yii setFlash getFlash用法"
 date: 2015-11-14 07:01:00.000000000 +09:00
+tags: php
 ---
 
 ```php

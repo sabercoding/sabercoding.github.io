@@ -2,6 +2,7 @@
 layout: article
 title: "alfred web search设置"
 date: 2016-03-08 08:59:00.000000000 +09:00
+tags: alfred mac
 ---
 
 免费的使用alfred没有购买powerpack。。。。还是想要使用的比较舒适～。。。。

@@ -2,6 +2,7 @@
 layout: article
 title: "siege 工具使用"
 date: 2017-02-09 02:31:31.000000000 +09:00
+tags: siege
 ---
 
 # 安装

@@ -2,6 +2,7 @@
 layout: article
 title: "mb_convert_encoding()使用"
 date: 2015-09-01 07:51:00.000000000 +09:00
+tags: php
 ---
 
 ![QQ截图20150901153912.png](https://shuibo.me/assets/images/201509/ayK7apJ_B883loLHcSDv0Av5d9OHUgSM.png "QQ截图20150901153912.png")

@@ -10,7 +10,7 @@ date: 2016-07-17 16:00:00.000000000 +09:00
     brew install mysql
 然后安装完了。
 
-    We''ve installed your MySQL database without a root password. To secure it run:
+    We"ve installed your MySQL database without a root password. To secure it run:
         mysql_secure_installation
 
     To connect run:
@@ -21,7 +21,7 @@ date: 2016-07-17 16:00:00.000000000 +09:00
 
     To have launchd start mysql now and restart at login:
       brew services start mysql
-    Or, if you don''t want/need a background service you can just run:
+    Or, if you don"t want/need a background service you can just run:
       mysql.server start
 看了前面的就开始操作了。。
 执行：
@@ -29,7 +29,7 @@ date: 2016-07-17 16:00:00.000000000 +09:00
     mysql_secure_installation
 报错：
 
-    ERROR 2002 (HY000): Can''t connect to local MySQL server through socket ''/tmp/mysql.sock''
+    ERROR 2002 (HY000): Can"t connect to local MySQL server through socket "/tmp/mysql.sock"
 然后就开始谷歌了。。。。。。。
 这个问题是普遍出现的，谷歌上面说了一个通用的方法。
 创建my.cnf文件后执行：
@@ -38,7 +38,7 @@ date: 2016-07-17 16:00:00.000000000 +09:00
     $ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
 执行下面语句后，报错：
 
-    mysql_install_db: [ERROR] unknown variable ''tmpdir=/tmp''
+    mysql_install_db: [ERROR] unknown variable "tmpdir=/tmp"
 瞬间无语了，估计是版本不适应，继续找答案。
 最后的解决方法其实就在安装完提示信息里的最后。
 执行：

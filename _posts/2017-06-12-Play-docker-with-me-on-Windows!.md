@@ -27,7 +27,7 @@ date: 2017-06-12 02:09:04.000000000 +09:00
 2. 获取加速器地址`https://xxxxxx.mirror.aliyuncs.com`
 3. 进入到root用户下执行命令
 ```
-sh -c "echo EXTRA_ARGS=\\''--registry-mirror=https://xxxxxx.mirror.aliyuncs.com\\'' >>/var/lib/boot2docker/profile"
+sh -c "echo EXTRA_ARGS=\\"--registry-mirror=https://xxxxxx.mirror.aliyuncs.com\\" >>/var/lib/boot2docker/profile"
 ```
 
 ### 使用

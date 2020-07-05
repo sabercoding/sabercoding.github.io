@@ -26,7 +26,7 @@ Welcome to Rust!
 This will download and install the official compiler for the Rust programming
 language, and its package manager, Cargo.
 
-It will add the cargo, rustc, rustup and other commands to Cargo''s bin
+It will add the cargo, rustc, rustup and other commands to Cargo"s bin
 directory, located at:
 
   /home/saber/.cargo/bin
@@ -51,25 +51,25 @@ Current installation options:
 3) Cancel installation
 1
 
-info: syncing channel updates for ''stable-x86_64-unknown-linux-gnu''
+info: syncing channel updates for "stable-x86_64-unknown-linux-gnu"
 info: latest update on 2017-10-12, rust version 1.21.0 (3b72af97e 2017-10-09)
-info: downloading component ''rustc''
-info: downloading component ''rust-std''
+info: downloading component "rustc"
+info: downloading component "rust-std"
  56.7 MiB /  56.7 MiB (100 %)  47.9 MiB/s ETA:   0 s
-info: downloading component ''cargo''
-info: downloading component ''rust-docs''
-info: installing component ''rustc''
-info: installing component ''rust-std''
-info: installing component ''cargo''
-info: installing component ''rust-docs''
-info: default toolchain set to ''stable''
+info: downloading component "cargo"
+info: downloading component "rust-docs"
+info: installing component "rustc"
+info: installing component "rust-std"
+info: installing component "cargo"
+info: installing component "rust-docs"
+info: default toolchain set to "stable"
 
   stable installed - rustc 1.21.0 (3b72af97e 2017-10-09)
 
 
 Rust is installed now. Great!
 
-To get started you need Cargo''s bin directory ($HOME/.cargo/bin) in your PATH
+To get started you need Cargo"s bin directory ($HOME/.cargo/bin) in your PATH
 environment variable. Next time you log in this will be done automatically.
 
 To configure your current shell run source $HOME/.cargo/env
@@ -150,8 +150,8 @@ $ cargo build
     Finished dev [unoptimized + debuginfo] target(s) in 0.70 secs
 ```
 
-编译完成后多出来一个文件''Cargo.lock''和一个文件夹''target''。
+编译完成后多出来一个文件"Cargo.lock"和一个文件夹"target"。
 
 Cargo 使用 Cargo.lock 来记录程序的依赖。这个项目并没有依赖，所以其内容比较少。事实上，你自己永远也不需要碰这个文件，让 Cargo 处理它就行了。
 
-编译完成后的项目在target里，不加''--release''参数则生成在`debug`文件夹内，否则在''release''文件夹内。执行文件夹内的''hello_cargo''文件即可。
+编译完成后的项目在target里，不加"--release"参数则生成在`debug`文件夹内，否则在"release"文件夹内。执行文件夹内的"hello_cargo"文件即可。

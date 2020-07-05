@@ -7,9 +7,9 @@ date: 2017-03-24 08:11:38.000000000 +09:00
 >找了半天的地图平台的api都没发现单一调用的根据关键词获取经纬度，只能退而求其次，找到了高德的周边搜索，从里面获取了一个能请求在一定范围内的关键词搜索
 
 ```
-$content = file_get_contents(''http://restapi.amap.com/v3/place/around?key=你的key&page=1&radius=5000&offset=10&keywords=%E5%9B%BD%E9%99%85%E8%8A%B1%E5%9B%AD%E5%9F%8E&location=118.387716%2C24.956172&s=rsv3&rf=h5&utm_source=litemap&callback=jsonp3'');
-$content = ltrim($content, ''jsonp3('');
-$content = rtrim($content, '')'');
+$content = file_get_contents("http://restapi.amap.com/v3/place/around?key=你的key&page=1&radius=5000&offset=10&keywords=%E5%9B%BD%E9%99%85%E8%8A%B1%E5%9B%AD%E5%9F%8E&location=118.387716%2C24.956172&s=rsv3&rf=h5&utm_source=litemap&callback=jsonp3");
+$content = ltrim($content, "jsonp3(");
+$content = rtrim($content, ")");
 print_r(json_decode($content,true));
 ```
 

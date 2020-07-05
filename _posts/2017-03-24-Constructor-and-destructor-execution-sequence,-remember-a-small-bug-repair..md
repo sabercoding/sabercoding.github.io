@@ -10,7 +10,7 @@ class Test {
     protected static $name;
 
     public function __construct() {
-        self::$name = ''test'';
+        self::$name = "test";
     }
 
     public function __destruct() {
@@ -36,7 +36,7 @@ class Test {
     protected static $name;
 
     public function __construct() {
-        self::$name = ''test'';
+        self::$name = "test";
         echo "执行构造函数!\\n";
     }
 

@@ -149,7 +149,7 @@ Guess the number!
 The secret number is: 67
 Please input your guess.
 gg
-thread ''main'' panicked at ''Please type a number!: ParseIntError { kind: InvalidDigit }'', /checkout/src/libcore/result.rs:906:4
+thread "main" panicked at "Please type a number!: ParseIntError { kind: InvalidDigit }", /checkout/src/libcore/result.rs:906:4
 note: Run with `RUST_BACKTRACE=1` for a backtrace.
 ```
 而且，我们这不还需要继续猜数字嘛。`Err(_)`是结果错误时返回要进行的操作，`continue`就能让它重新继续来猜。

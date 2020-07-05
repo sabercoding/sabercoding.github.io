@@ -7,29 +7,34 @@ date: 2015-11-12 10:34:00.000000000 +09:00
 今天发现服务器上Tomcat 8080端口起不来，老提示端口已经被占用。
 
 使用命令：
-
+```
 ps -aux | grep tomcat
+```
 
 发现并没有8080端口的Tomcat进程。
 
-使用命令：netstat –apn
+使用命令：`netstat –apn`
 
-方法二：直接使用 netstat   -anp   |   grep  portno
-即：netstat –apn | grep 8080
+方法二：直接使用 `netstat -anp | grep portno`
+即：`netstat –apn | grep 8080`
+
 查看所有的进程和端口使用情况。发现下面的进程列表，其中最后一栏是PID/Program name
+
 2. ps 命令用于查看当前正在运行的进程。
 grep 是搜索
-例如： ps -ef | grep java
+例如：`ps -ef | grep java`
 表示查看所有进程里 CMD 是 java 的进程信息
-ps -aux | grep java
+`ps -aux | grep java`
 -aux 显示所有状态
 ps
+
 3. kill 命令用于终止进程
 例如： kill -9 [PID]
 
 scp -r /home/space/music/ root@www.cumt.edu.cn:/home/root/others/
 
 chmod命令详解
+```
 　　使用权限：所有使用者
 　　使用方式：chmod [-cfvR] [--help] [--version] mode file...
 　　说明：
@@ -45,10 +50,10 @@ r 表示可读取，w 表示可写入，x 表示可执行，X 表示只有当该
 -R : 对目前目录下的所有档案与子目录进行相同的权限变更(即以递回的方式逐个变更)
 --help : 显示辅助说明
 --version : 显示版本
-
+```
 　　范例：
-　　将档案 file1.txt 设为所有人皆可读取
 
+　　将档案 file1.txt 设为所有人皆可读取
 chmod ugo+r file1.txt
 
 　　将档案 file1.txt 设为所有人皆可读取
@@ -68,23 +73,36 @@ chmod u+x ex1.py
 chmod -R a+r *
 
 　　此外chmod也可以用数字来表示权限如 chmod 777 file
+
 　　语法为：chmod abc file
+
 　　其中a,b,c各为一个数字，分别表示User、Group、及Other的权限。
+
 　　r=4，w=2，x=1
+
 　　若要rwx属性则4+2+1=7；
+
 　　若要rw-属性则4+2=6；
+
 　　若要r-x属性则4+1=7。
-　　范例：
+
+范例：
+```
 　　chmod a=rwx file 和 chmod 777 file 效果相同
 　　chmod ug=rwx,o=x file 和 chmod 771 file 效果相同
-　　若用chmod 4755 filename可使此程式具有root的权限
+　　#若用chmod 4755 filename可使此程式具有root的权限
+```
+chown命令详解
 
- chown命令详解
-　　使用权限：root
-　　使用方式：chown [-cfhvR] [--help] [--version] user[:group] file...
-　　说明：
-　　Linux/Unix 是多人多工作业系统，所有的档案皆有拥有者。利用 chown 可以将档案的拥有者加以改变。一般来说，这个指令只有是由系统管理者(root)所使用，一般使用者没有权限可以改变别人的档案拥有者，也没有权限可以自己的档案拥有者改设为别人。只有系统管理者(root)才有这样的权限。
+使用权限：root
 
+使用方式：chown [-cfhvR] [--help] [--version] user[:group] file...
+
+说明：
+　
+Linux/Unix 是多人多工作业系统，所有的档案皆有拥有者。利用 chown 可以将档案的拥有者加以改变。一般来说，这个指令只有是由系统管理者(root)所使用，一般使用者没有权限可以改变别人的档案拥有者，也没有权限可以自己的档案拥有者改设为别人。只有系统管理者(root)才有这样的权限。
+
+```
 user : 新的档案拥有者的使用者
 IDgroup : 新的档案拥有者的使用者群体(group)
 -c : 若该档案拥有者确实已经更改，才显示其更改动作
@@ -94,29 +112,34 @@ IDgroup : 新的档案拥有者的使用者群体(group)
 -R : 对目前目录下的所有档案与子目录进行相同的拥有者变更(即以递回的方式逐个变更)
 --help : 显示辅助说明
 --version : 显示版本
+```
 
-　　范例：
-　　将档案 file1.txt 的拥有者设为 users 群体的使用者 jessie
+范例：
 
-chown jessie:users file1.txt
+ 将档案 file1.txt 的拥有者设为 users 群体的使用者 jessie
 
-　　将目前目录下的所有档案与子目录的拥有者皆设为 users 群体的使用者 lamport
 
-chown -R lamport:users *
+`chown jessie:users file1.txt`
 
--rw------- (600) -- 只有属主有读写权限。
--rw-r--r-- (644) -- 只有属主有读写权限；而属组用户和其他用户只有读权限。
--rwx------ (700) -- 只有属主有读、写、执行权限。
--rwxr-xr-x (755) -- 属主有读、写、执行权限；而属组用户和其他用户只有读、执行权限。
--rwx--x--x (711) -- 属主有读、写、执行权限；而属组用户和其他用户只有执行权限。
--rw-rw-rw- (666) -- 所有用户都有文件读、写权限。这种做法不可取。
--rwxrwxrwx (777) -- 所有用户都有读、写、执行权限。更不可取的做法。
+将目前目录下的所有档案与子目录的拥有者皆设为 users 群体的使用者 lamport
 
-　　以下是对目录的两个普通设定：
+`chown -R lamport:users *`
 
-drwx------ (700) - 只有属主可在目录中读、写。
-drwxr-xr-x (755) - 所有用户可读该目录，但只有属主才能改变目录中的内容
+* -rw------- (600) -- 只有属主有读写权限。
+* -rw-r--r-- (644) -- 只有属主有读写权限；而属组用户和其他用户只有读权限。
+* -rwx------ (700) -- 只有属主有读、写、执行权限。
+* -rwxr-xr-x (755) -- 属主有读、写、执行权限；而属组用户和其他用户只有读、执行权限。
+* -rwx--x--x (711) -- 属主有读、写、执行权限；而属组用户和其他用户只有执行权限。
+* -rw-rw-rw- (666) -- 所有用户都有文件读、写权限。这种做法不可取。
+* -rwxrwxrwx (777) -- 所有用户都有读、写、执行权限。更不可取的做法。
 
-　　suid的代表数字是4，比如4755的结果是-rwsr-xr-x
-　　sgid的代表数字是2，比如6755的结果是-rwsr-sr-x
-　　sticky位代表数字是1，比如7755的结果是-rwsr-sr-t
+以下是对目录的两个普通设定：
+
+* drwx------ (700) - 只有属主可在目录中读、写。
+* drwxr-xr-x (755) - 所有用户可读该目录，但只有属主才能改变目录中的内容
+
+suid的代表数字是4，比如4755的结果是-rwsr-xr-x
+
+sgid的代表数字是2，比如6755的结果是-rwsr-sr-x
+
+sticky位代表数字是1，比如7755的结果是-rwsr-sr-t

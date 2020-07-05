@@ -40,7 +40,7 @@ date: 2016-03-25 11:04:00.000000000 +09:00
 **Step7: mysql root密码查找**
 密码保存在临时文件里：/var/log/mysqld.log命令：
 
-    # grep ''temporary password'' /var/log/mysqld.log
+    # grep "temporary password" /var/log/mysqld.log
      2016-03-25T08:28:24.920752Z 1 [Note] A temporary password is generated for root@localhost: &lt;5%vn9JFxmUz
 
 **Step8:重设root 创建新用户远程**
@@ -50,7 +50,7 @@ date: 2016-03-25 11:04:00.000000000 +09:00
      Enter password:
      mysql: use mysql; //不重新设置密码会报错。
      ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.
-     mysql: SET PASSWORD = PASSWORD(''Your-password''); //设置密码
+     mysql: SET PASSWORD = PASSWORD("Your-password"); //设置密码
      Query OK, 0 rows affected, 1 warning (0.00 sec)
      mysql: grant all privileges on *.* to username@localhost identified by "password" ; //创建新用户
      Query OK, 0 rows affected, 1 warning (0.00 sec)

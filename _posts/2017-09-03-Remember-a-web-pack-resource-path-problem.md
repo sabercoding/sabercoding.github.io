@@ -30,7 +30,7 @@ location / {
 ![配置文件][4]
 
 
-  [1]: https://o8ekw8sx0.qnssl.com/B9CF5B26-7F4C-430A-AB68-0D430250580F.png
-  [2]: https://o8ekw8sx0.qnssl.com/0BCAB6E5-C21A-453E-A71A-E86543F5D866.png
-  [3]: https://o8ekw8sx0.qnssl.com/C1498B8B-5797-46A7-B7BF-F28178FAD03A.png
-  [4]: https://o8ekw8sx0.qnssl.com/500C1B23-6339-465A-AB70-43601954DF8C.png
+  [1]: https://shuibo.me/assets/images/201709/B9CF5B26-7F4C-430A-AB68-0D430250580F.png
+  [2]: https://shuibo.me/assets/images/201709/0BCAB6E5-C21A-453E-A71A-E86543F5D866.png
+  [3]: https://shuibo.me/assets/images/201709/C1498B8B-5797-46A7-B7BF-F28178FAD03A.png
+  [4]: https://shuibo.me/assets/images/201709/500C1B23-6339-465A-AB70-43601954DF8C.png

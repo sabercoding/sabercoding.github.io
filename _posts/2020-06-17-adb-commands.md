@@ -148,6 +148,7 @@ starqltechn:/ $
 | 7-16 | KEYCODE_0-KEYCODE_9 | 0-9 |
 | 29-54  | KEYCODE_A-KEYCODE_54 | A-Z |
 | 82 | KEYCODE_MENU | 解锁键 |
+
 更多keycode可以查阅[官网](
 https://developer.android.com/reference/android/view/KeyEvent#KEYCODE_1)。
 

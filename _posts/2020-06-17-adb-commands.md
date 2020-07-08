@@ -138,7 +138,9 @@ starqltechn:/ $
 
 #### 模拟按键
 `adb shell input keyevent 键值`
+
 常用键值：
+
 | 键值 | keycode | 含义 |
 | --- | --- | --- |
 | 3 | KEYCODE_HOME | home键 |
@@ -157,15 +159,19 @@ https://developer.android.com/reference/android/view/KeyEvent#KEYCODE_1)。
 
 #### 授权及取消授权
 `adb shell pm grant com.eg.android.AlipayGphone android.permission.READ_EXTERNAL_STORAGE`
+
 `adb shell pm revoke com.eg.android.AlipayGphone android.permission.READ_EXTERNAL_STORAGE`
 
 #### 设置代理
 `adb shell settings put global http_proxy 代理IP地址:端口号`
-`adb shell settings put global http_proxy 10.18.224.171:8080`
+
+`adb shell settings put global http_proxy 本机ip:8080`
 
 #### 移除代理
 `adb shell settings delete global http_proxy`
+
 `adb shell settings delete global global_http_proxy_host`
+
 `adb shell settings delete global global_http_proxy_port`
 
 移除完还需要重启手机才能删除代理，可以使用设置错误代理来解决需要重启的问题：
@@ -258,6 +264,7 @@ BatteryInfoBackUp
 ```
 
 #### 打印log信息
+
 |指令|说明|备注|
 | --- | --- | --- |
 |adb logcat|打印log|/|

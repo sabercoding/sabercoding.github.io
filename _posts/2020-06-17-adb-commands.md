@@ -117,7 +117,9 @@ starqltechn:/ $
 
 #### 录屏
 录制十秒
+
 `adb shell screenrecord --time-limit 10 /sdcard/screencap.mp4`
+
 注:ov,huawei不支持adb路屏
 
 #### 文件操作

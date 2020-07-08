@@ -6,6 +6,7 @@ tags: webpack
 ---
 
 >webpack执行npm run build 之后传到远程服务器后，路由不能正常显示。本地环境能正常访问。
+
 ## 问题
 访问/dashboard正常跳转到/dashboard/index能正常显示，而在页面/dashboard/index刷新访问的时候就不能访问报了以下的错误。
 ![问题][1]

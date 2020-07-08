@@ -176,6 +176,7 @@ https://developer.android.com/reference/android/view/KeyEvent#KEYCODE_1)。
 `adb shell settings delete global global_http_proxy_port`
 
 移除完还需要重启手机才能删除代理，可以使用设置错误代理来解决需要重启的问题：
+
 `adb shell settings put global http_proxy :0`
 
 #### 检查网络情况

@@ -2,7 +2,7 @@
 layout: article
 title: "adb常用命令"
 date: 2020-07-07 18:39:00.000000000 +09:00
-tags: adb
+tags: adb android
 ---
 
 本文简单介绍下安卓手机调试必备工具adb常用命令。

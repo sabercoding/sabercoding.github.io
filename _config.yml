@@ -37,9 +37,9 @@ author:
   type      : # "person" (default), "organization"
   name      : Shuibo
   url       : https://shuibo.me
-  avatar    : # path or url of avatar image (square)
+  avatar    : https://shuibo.me/assets/avatar.png # path or url of avatar image (square)
   bio       : .
-  email     :
+  email     : sabercoding@gmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...

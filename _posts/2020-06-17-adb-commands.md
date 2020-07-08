@@ -19,7 +19,7 @@ windows环境下，执行命令需要打开`cmd`，`win+r`打开运行，输入`
 
 #### 获取版本信息
 
-``` cmd
+```
 >adb
 Android Debug Bridge version 1.0.41
 Version 30.0.1-6435776
@@ -30,14 +30,14 @@ Installed as D:\platform-tools\adb.exe
 
 由于adb并不稳定, 有时候莫名的问题掉线时, 可以先kill-server, 然后start-server来确保Server进程启动。往往可以解决问题。
 
-``` cmd
+```
 >adb start-server
 >adb kill-server
 ```
 
 如果是因为5037端口被占用而启动失败的话，可以执行以下操作解决：
 
-``` cmd
+```
 >netstat -aon|findstr 5037   # 查看端口占用
   TCP    127.0.0.1:5037         0.0.0.0:0              LISTENING       32568
 >tasklist | findstr "32568"      # 查看端口占用程序
@@ -63,7 +63,7 @@ adb.exe                      32568 Console                    1     11,444 K
 
 查看已连接的设备列表
 
-``` cmd
+```
 >adb devices
 List of devices attached
 1a74531423027ece        device
@@ -76,7 +76,7 @@ List of devices attached
 
 #### 安装应用
 
-``` cmd
+```
 >adb install xxxx.apk
 ```
 
@@ -93,7 +93,7 @@ List of devices attached
 
 #### 登陆手机系统
 
-``` cmd
+```
 >adb shell
 starqltechn:/ $
 ```

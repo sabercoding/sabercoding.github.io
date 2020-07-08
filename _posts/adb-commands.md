@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "adb常用命令"
-date: 2020-07-07 18:39:00.000000000 +09:00
+date: 2020-06-17 18:39:00.000000000 +09:00
 tags: adb android
 ---
 

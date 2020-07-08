@@ -22,6 +22,8 @@ html,
 .page__main {
   height: 100%;
   color: $text-color;
+  font-size: 19px;
+  line-height: 1.8;
   .col-aside {
     display: none;
     & > aside {

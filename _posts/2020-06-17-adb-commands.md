@@ -167,6 +167,9 @@ adb shell pm grant com.eg.android.AlipayGphone android.permission.READ_EXTERNAL_
 adb shell pm revoke com.eg.android.AlipayGphone android.permission.READ_EXTERNAL_STORAGE
 ```
 
+#### 查看代理配置
+`adb shell settings get global http_proxy`
+
 #### 设置代理
 ```shell
 adb shell settings put global http_proxy 代理IP地址:端口号

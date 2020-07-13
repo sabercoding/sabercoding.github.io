@@ -13,6 +13,7 @@ tags: mysql 分表
 | 6992.00MB | 0.00MB        | 5.00MB    | 10137.00MB |
 +-----------+---------------+-----------+------------+
 ```
+
 随着时间的发展，这个表就会越来越大，越来越不好维护。另外，这个表的唯一索引条件不再唯一，需做两件事。
 
 1. 修改唯一索引为普通索引
@@ -28,7 +29,7 @@ tags: mysql 分表
 
 #### 创建分区表
 
-```
+```sql
 create table wdb_interceptinfo
 (
   `eid` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -60,7 +61,7 @@ create table wdb_interceptinfo
 
 线下直接是这么操作的。
 
-```
+```sql
 INSERT INTO wdb_interceptinfo SELECT * FROM wdb_interceptinfos where eid > 0 LIMIT 10000000;
 ```
 
@@ -70,7 +71,7 @@ INSERT INTO wdb_interceptinfo SELECT * FROM wdb_interceptinfos where eid > 0 LIM
 
 第一步建表时，并没加上索引，为的是减少插入耗时。
 
-```
+```sql
 ALTER TABLE wdb_interceptinfo ADD INDEX idx_bankid_host(bankid, host);
 ```
 

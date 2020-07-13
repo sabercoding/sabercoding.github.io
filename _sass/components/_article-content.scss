@@ -43,10 +43,11 @@
     @include horizontal-rules();
   }
   blockquote {
-    padding-left: map-get($spacers, 3);
-    font-size: map-get($base, font-size-sm);
-    color: $text-color-l;
-    @include split-line(left, 4px, $border-color);
+    padding: 10px 15px;
+    color: $text-color;
+    border-color: #D6DBDF;
+    background: none repeat scroll 0 0 rgba(102,128,153,.05);
+    @include split-line(left, 10px, $border-color);
     p {
       margin: map-get($spacers, 2) 0;
     }

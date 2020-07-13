@@ -19,7 +19,7 @@ windows环境下，执行命令需要打开`cmd`，`win+r`打开运行，输入`
 
 #### 获取版本信息
 
-```
+```shell
 >adb
 Android Debug Bridge version 1.0.41
 Version 30.0.1-6435776
@@ -30,14 +30,14 @@ Installed as D:\platform-tools\adb.exe
 
 由于adb并不稳定, 有时候莫名的问题掉线时, 可以先kill-server, 然后start-server来确保Server进程启动。往往可以解决问题。
 
-```
+```shell
 >adb start-server
 >adb kill-server
 ```
 
 如果是因为5037端口被占用而启动失败的话，可以执行以下操作解决：
 
-```
+```shell
 >netstat -aon|findstr 5037   # 查看端口占用
   TCP    127.0.0.1:5037         0.0.0.0:0              LISTENING       32568
 >tasklist | findstr "32568"      # 查看端口占用程序
@@ -53,7 +53,7 @@ adb.exe                      32568 Console                    1     11,444 K
 * 雷电模拟器 5555 + index * 2
 * 夜神模拟器 127.0.0.1:62001 或 127.0.0.1:52001
 
-```
+```shell
 >adb connect 127.0.0.1:7555
 ```
 
@@ -63,7 +63,7 @@ adb.exe                      32568 Console                    1     11,444 K
 
 查看已连接的设备列表
 
-```
+```shell
 >adb devices
 List of devices attached
 1a74531423027ece        device
@@ -149,34 +149,39 @@ starqltechn:/ $
 | 29-54  | KEYCODE_A-KEYCODE_54 | A-Z |
 | 82 | KEYCODE_MENU | 解锁键 |
 
-更多keycode可以查阅[官网](
-https://developer.android.com/reference/android/view/KeyEvent#KEYCODE_1)。
+更多keycode可以查阅[官网](https://developer.android.com/reference/android/view/KeyEvent#KEYCODE_1)。
 
 #### 模拟鼠标点击
-`adb shell input tap X Y`
+```shell
+adb shell input tap X Y
+```
 
 #### 模拟鼠标滑动
-`adb shell input swipe X1 Y1 X2 Y2`
+```shell
+adb shell input swipe X1 Y1 X2 Y2
+```
 
 #### 授权及取消授权
-`adb shell pm grant com.eg.android.AlipayGphone android.permission.READ_EXTERNAL_STORAGE`
-
-`adb shell pm revoke com.eg.android.AlipayGphone android.permission.READ_EXTERNAL_STORAGE`
+```
+adb shell pm grant com.eg.android.AlipayGphone android.permission.READ_EXTERNAL_STORAGE
+adb shell pm revoke com.eg.android.AlipayGphone android.permission.READ_EXTERNAL_STORAGE
+```
 
 #### 查看代理配置
 `adb shell settings get global http_proxy`
 
 #### 设置代理
-`adb shell settings put global http_proxy 代理IP地址:端口号`
-
-`adb shell settings put global http_proxy 本机ip:8080`
+```shell
+adb shell settings put global http_proxy 代理IP地址:端口号
+adb shell settings put global http_proxy 本机ip:8080
+```
 
 #### 移除代理
-`adb shell settings delete global http_proxy`
-
-`adb shell settings delete global global_http_proxy_host`
-
-`adb shell settings delete global global_http_proxy_port`
+```shell
+adb shell settings delete global http_proxy
+adb shell settings delete global global_http_proxy_host
+adb shell settings delete global global_http_proxy_port
+```
 
 移除完还需要重启手机才能删除代理，可以使用设置错误代理来解决需要重启的问题：
 
@@ -192,7 +197,7 @@ PING www.wshifen.com (104.193.88.123) 56(84) bytes of data.
 ```
 
 #### 锁屏情况
-```
+```shell
 >adb shell dumpsys power|findstr  "Display Power"
 Power Manager State:
   mIsPowered=true
@@ -223,7 +228,7 @@ Display Power: state=ON  # 开
 
 
 #### 检查电池情况
-```
+```shell
 >adb shell dumpsys battery
 Current Battery Service state:
   AC powered: false

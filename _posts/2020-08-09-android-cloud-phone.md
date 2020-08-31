@@ -27,6 +27,7 @@ tags: 云真机 android
 云真机包括两个方面，设备界面同步和用户操作同步，现有的实现方式有：
 
 ##### 界面同步框架
+
 | 名称 | 备注 |
 | -- | -- |
 | [minicap](https://github.com/DeviceFarmer/minicap) | android新版本需要适配 |
@@ -34,6 +35,7 @@ tags: 云真机 android
 | adb |  |
 
 ##### 操作同步框架
+
 | 名称 | 备注 |
 | -- | -- |
 | [minitouch](https://github.com/DeviceFarmer/minitouch) | 电视不支持 |
@@ -51,7 +53,8 @@ tags: 云真机 android
 ![99958ac086eec7469cc0d70d3b3f8270.png](https://shuibo.me/assets/images/202008/c773515b-8267-4beb-a744-f1231a558740.png)
 
 执行exe文件。
-``` cmd
+
+``` shell
 INFO: scrcpy 1.16 <https://github.com/Genymobile/scrcpy>
 E:\automation\scrcpy-win64-v1.16\scrcpy-server: 1 file pushed, 0 skipped. 1.2 MB/s (33622 bytes in 0.026s)
 [server] INFO: Device: samsung SM-G9600 (Android 10)

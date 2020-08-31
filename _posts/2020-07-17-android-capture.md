@@ -10,7 +10,9 @@ apk动态分析中，应用发起的请求是最为重要的信息之一。一�
 ## 模拟器环境
 
 模拟器：[Mumu](http://mumu.163.com/)
+
 安卓版本：6.0.1
+
 代理：[Mitmproxy](https://mitmproxy.org/)
 
 ![020bc1f1220db0f2b2978dbf0c4bfc19.png](https://shuibo.me/assets/images/202007/Pixelbook_3.png)
@@ -48,15 +50,18 @@ def request(flow):
         file_object.write(data+"\n")
 ```
 
-启动mimproxy软件：
-``` cmd
+启动mitmproxy软件：
+
+```shell
 >mitmdump.exe -s proxy.py
 Loading script proxy.py
 Proxy server listening at http://*:8080
 ```
 
 这时候已经启动了代理监听，端口是8080。我们需要在mumu模拟器上配置代理：
+
 设置->WLAN->长按连接WiFi->修改网络->配置代理
+
 ![47ec686b4b7d224ec9c1749abd8ade83.png](https://shuibo.me/assets/images/202007/8c19e5c0-4bc7-4d66-97d6-70b29f909b16.png)
 
 #### 证书配置
@@ -68,8 +73,11 @@ Proxy server listening at http://*:8080
 
 我们需要去mitm.it网站上下载相应的信任证书。
 ![3a341e26992099b5871568f760db6ea6.png](https://shuibo.me/assets/images/202007/4244bd79-94de-415a-8c63-aa1b84afb969.png)
+
 ![8f928a5b5b6f154f455e63af2ee5298a.png](https://shuibo.me/assets/images/202007/7a7e852e-593c-421b-94cc-e90b52f77374.png)
+
 ![3c634312966ca9dea60819cefa704f06.png](https://shuibo.me/assets/images/202007/025ad3f9-87f2-4995-971c-5ef2983eaa4e.png)
+
 安装完毕后，再次访问https网站就不会提示有问题了。
 自此，6.0版本模拟器环境配置好了。可以进行安装软件，抓包了。
 
@@ -77,15 +85,18 @@ Proxy server listening at http://*:8080
 ## 真机环境
 
 模拟器：三星S9
+
 安卓版本：10
+
 usb连接：[Gnirehtet](https://github.com/Genymobile/gnirehtet)
+
 代理：[Mitmproxy](https://mitmproxy.org/)
 
 ### 网络
 真机环境首先要解决的就是网络连接的问题，在提供网络环境网络连接的同时，还需要能进行网络捕捉。网络连接可以从以下三方面入手：
-* WiFi：通过pc创建热点，手机连接热点，实现手机上网。考虑到后续是搬到机房，创建热点的方式，无线连接，不稳定且不易维护。
-* 蓝牙：通过蓝牙连接共享网络，实现手机上网。市面上的手机，基本是连接pc，实现PC通过手机上网，实现不了。
-* USB：通过USB连接，实现手机上网。手机自带有USB共享网络，不幸的是跟蓝牙网络共享一样，也是Pc共享手机网络，查遍资料，就在放弃的时候找到了[Gnirehtet](https://bbs.pediy.com/thread-251370.htm)。
+* **WiFi**：通过pc创建热点，手机连接热点，实现手机上网。考虑到后续是搬到机房，创建热点的方式，无线连接，不稳定且不易维护。
+* **蓝牙**：通过蓝牙连接共享网络，实现手机上网。市面上的手机，基本是连接pc，实现PC通过手机上网，实现不了。
+* **USB**：通过USB连接，实现手机上网。手机自带有USB共享网络，不幸的是跟蓝牙网络共享一样，也是Pc共享手机网络，查遍资料，就在放弃的时候找到了[Gnirehtet](https://bbs.pediy.com/thread-251370.htm)。
 
 ![b0ff16273179c380eecdc604c2d46d91.png](https://shuibo.me/assets/images/202007/Pixelbook_2.png)
 
@@ -106,10 +117,11 @@ usb连接：[Gnirehtet](https://github.com/Genymobile/gnirehtet)
 
 3. 手机开启调试并连接电脑。
 
-4. 在手机上安装`gnirehtet.apk`软件：`adb install gnirehtet.apk`
+4. 在手机上安装`gnirehtet.apk`软件：`adb install gnirehtet.apk`\
 
 5. 打开`cmd`，进入到`atform-tools`文件夹，执行命令：
-```
+
+```shell
 >gnirehtet.exe run
 2020-07-08 12:26:49.125 INFO Main: Checking gnirehtet client...
 2020-07-08 12:26:49.125 INFO Main: Starting relay server on port 31416...
@@ -126,7 +138,7 @@ Starting: Intent { act=com.genymobile.gnirehtet.START cmp=com.genymobile.gnireht
 相同的，真机上也是要配置代理，将请求引向Mitmproxy。刚开始的时候，由于[Gnirehtet不支持](https://github.com/Genymobile/gnirehtet/issues/27)，尝试使用[proxifier](https://www.proxifier.com/)，设置`gnirehtet`走8080端口，`mitmproxy`直连。
 
 这样一来又多了一个软件，增加维护成本，后发现其实手机自己就可以配置代理：
-```
+```shell
 >adb shell settings put global http_proxy 本机ip:8080
 ```
 
@@ -149,7 +161,7 @@ https请求过程中，第四步，客户端解析证书时，mitmproxy发送过
 
 这是因为mitmproxy处理https的时候是解密了数据，自己需要加解密，加解密的化使用的证书是mitmproxy自带的。但Android7.0及以上[netwok配置文件](https://developer.android.google.cn/training/articles/security-config.html)，取消了对用户自己安装的证书信任，所以Android7.0及以上https无法抓包。
 
-Android 6.0 network配置文件
+Android 6.0 network配置文件：
 ``` xml
 <!-- 默认允许所有明文通信 -->
 <base-config cleartextTrafficPermitted="true">
@@ -162,7 +174,7 @@ Android 6.0 network配置文件
 </base-config>
 ```
 
-Android 7.0 -8.1 network配置文件
+Android 7.0 -8.1 network配置文件：
 
 ``` xml
 <!-- 默认允许所有明文通信 -->
@@ -174,7 +186,7 @@ Android 7.0 -8.1 network配置文件
 </base-config>
 ```
 
-Android 9.0 network配置文件
+Android 9.0 network配置文件：
 
 ``` xml
 <!-- 默认禁止所有明文通信 -->
@@ -197,6 +209,7 @@ Android7以下不会出现此问题，可直接使用低版本系统。
 ![d96cd5a6736cb933cefe56c970f33abb.png](https://shuibo.me/assets/images/202007/43e831bf-c70e-4591-84e8-f1f323290bd2.png)
 
 直通模式就是，仅传递加密的数据，而不进行解密操作，也就不会出现了证书不信任的情况。
+
 官方提供了[实践脚本](https://github.com/mitmproxy/mitmproxy/blob/ed68e0a1ba090eca5f8b841a9d06303d2b5862f3/examples/contrib/tls_passthrough.py)，执行`mitmdump.exe -s tls_passthrough.py`确实可以访问https了。但自定义request后发现，https请求由于是直通模式，抓不到请求信息，也就没有相应的日志了。
 
 ##### 自定义其网络安全设置
@@ -221,7 +234,7 @@ adb push c8750f0d.0 /system/etc/security/cacerts/
 
 ##### 安装xposed
 
-如果是使用 [magisk](https://github.com/topjohnwu/Magisk) root 的话，就会出现没权限的问题，也
+如果是使用 [magisk](https://github.com/topjohnwu/Magisk) root 的话，就会出现没写入系统证书权限的问题。但是可以刷入第三方框架xposed，再安装TrustMeAlready模块，就可以禁用SSL验证，可以抓取https请求。
 
 ### 其它
 
